@@ -10,6 +10,6 @@ import java.lang.annotation.Target;
  * @Date 2020/6/28  3:23 下午
  */
 @Retention(RetentionPolicy.SOURCE)
-@Target(ElementType.PARAMETER)
+@Target(ElementType.METHOD)
 public @interface ValidCheck {
 }

@@ -1,5 +1,6 @@
 package com.example.apt.web.controllers;
 
+import com.example.apt.handler.annotations.ValidCheck;
 import com.example.apt.web.models.CarQo;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +20,7 @@ public class TestController {
     }
 
     @PatchMapping
+    @ValidCheck
     public void testPatchValid(@RequestBody CarQo carQo) {
         System.out.println(carQo.toString());
     }

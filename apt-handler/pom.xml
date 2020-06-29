@@ -33,6 +33,18 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.8.0</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+            <!--
+            /Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/lib/tools.jar
+            /Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre
+            -->
+        </dependency>
     </dependencies>
 
 </project>
